@@ -34,5 +34,6 @@ WHERE
     ips.avg_fragmentation_in_percent > 5.0 -- Only show indexes with fragmentation above 5%
     AND i.name IS NOT NULL
 ORDER BY 
-    'Fragmentacao (%)' DESC;
+    'Fragmentation (%)' DESC;
+
 
