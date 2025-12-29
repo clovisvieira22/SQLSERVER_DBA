@@ -1,0 +1,26 @@
+logman create counter SQLServer_Performance ^
+-o "C:\PerfLogs\SQLServer_Performance.blg" ^
+-f bincirc ^
+-v mmddhhmm ^
+-max 500 ^
+-c ^
+"\Processor(_Total)\% Processor Time" ^
+"\Processor(_Total)\% Privileged Time" ^
+"\System\Processor Queue Length" ^
+"\Memory\Available MBytes" ^
+"\Memory\Pages/sec" ^
+"\PhysicalDisk(_Total)\Avg. Disk sec/Read" ^
+"\PhysicalDisk(_Total)\Avg. Disk sec/Write" ^
+"\PhysicalDisk(_Total)\Disk Reads/sec" ^
+"\PhysicalDisk(_Total)\Disk Writes/sec" ^
+"\PhysicalDisk(_Total)\Current Disk Queue Length" ^
+"\SQLServer:Memory Manager\Total Server Memory (KB)" ^
+"\SQLServer:Memory Manager\Target Server Memory (KB)" ^
+"\SQLServer:Memory Manager\Memory Grants Pending" ^
+"\SQLServer:Buffer Manager\Page Life Expectancy" ^
+"\SQLServer:Buffer Manager\Buffer Cache Hit Ratio" ^
+"\SQLServer:SQL Statistics\Batch Requests/sec" ^
+"\SQLServer:SQL Statistics\SQL Compilations/sec" ^
+"\SQLServer:SQL Statistics\SQL Re-Compilations/sec" ^
+"\SQLServer:General Statistics\Processes Blocked" ^
+-si 15
