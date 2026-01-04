@@ -1,3 +1,4 @@
+
 /*
   =========================================================================
   Script for checking index fragmentation in SQL Server
